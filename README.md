@@ -1,11 +1,9 @@
-# GallScan AI v3 — YOLO26 Gallstone Detection
+# GallScan AI v3 — YOLOv26 Gallstone Detection
 
 AI-assisted gallstone detection using **YOLO26 instance segmentation** with three explainability outputs:
 EigenCAM · Segmentation Masks · Prediction Stability Map.
 
----
-
-## Why YOLO26?
+## Why YOLOv26?
 
 | Feature                       | Benefit                                     |
 | ----------------------------- | ------------------------------------------- |
@@ -15,9 +13,6 @@ EigenCAM · Segmentation Masks · Prediction Stability Map.
 | ProgLoss + STAL               | Improved small-object (gallstone) detection |
 | Up to 43% faster on CPU       | Practical for CPU-only deployment           |
 
----
-
-## Quick Start
 
 ### 1. Create environment
 
@@ -45,7 +40,7 @@ python convert_boxes_to_masks.py --split train
 python convert_boxes_to_masks.py --split valid
 ```
 
-### 3. Train YOLO26-seg
+### 3. Train YOLOv26-seg
 
 ```bash
 python train.py                        # CPU, yolo26s-seg, 100 epochs
@@ -54,7 +49,6 @@ python train.py --model yolo26m-seg    # larger model
 python train.py --epochs 150 --batch 16
 ```
 
-Best weights are automatically copied to `weights/gallstone_seg.pt`.
 
 ### 4. Start backend
 
@@ -89,8 +83,6 @@ Open: `http://localhost:5173`
 
 ## API
 
-### `POST /api/detect`
-
 Upload an image (JPEG/PNG/WebP/TIFF/DICOM). Returns:
 
 ```json
@@ -119,8 +111,6 @@ Upload an image (JPEG/PNG/WebP/TIFF/DICOM). Returns:
 ```
 
 ---
-
-## Explainability Methods
 
 ### EigenCAM
 
