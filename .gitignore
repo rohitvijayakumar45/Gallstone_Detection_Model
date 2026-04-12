@@ -1,0 +1,41 @@
+# Dependencies
+frontend/node_modules/
+backend/venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.env
+.env.*
+
+# Dataset splits (keep backend/dataset/data.yaml)
+backend/dataset/train/
+backend/dataset/valid/
+backend/dataset/test/
+
+# Training checkpoints (large)
+backend/runs/**/*.pt
+*.onnx
+
+# Ultralytics base weights (re-download for training; not required for inference)
+backend/yolo26n.pt
+backend/yolo26s-seg.pt
+
+# Frontend build
+frontend/dist/
+
+# Logs / cache
+*.log
+.npm-cache/
+
+# Local / IDE
+.claude/
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
