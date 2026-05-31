@@ -14,63 +14,7 @@ EigenCAM · Segmentation Masks · Prediction Stability Map.
 | Up to 43% faster on CPU       | Practical for CPU-only deployment           |
 
 
-### 1. Create environment
 
-```bash
-cd Gallstone_V3/backend
-python -m venv venv
-venv\Scripts\activate       # Windows
-# source venv/bin/activate  # Mac/Linux
-pip install -r requirements.txt
-```
-
-### 2. Get dataset from Roboflow
-
-- Go to `universe.roboflow.com`, search `gallstone ultrasound`
-- Export → **Format: YOLOv8** · **Augmentation: OFF** · **Split: 80/15/5**
-- Unzip into `backend/dataset/`
-
-If your export has detection labels only (no segmentation), convert them:
-
-```bash
-# Download SAM checkpoint first:
-# https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth
-pip install segment-anything
-python convert_boxes_to_masks.py --split train
-python convert_boxes_to_masks.py --split valid
-```
-
-### 3. Train YOLOv26-seg
-
-```bash
-python train.py                        # CPU, yolo26s-seg, 100 epochs
-python train.py --device 0             # GPU
-python train.py --model yolo26m-seg    # larger model
-python train.py --epochs 150 --batch 16
-```
-
-
-### 4. Start backend
-
-```bash
-uvicorn main:app --reload --port 8000
-```
-
-API docs: `http://localhost:8000/docs`
-
-### 5. Start frontend
-
-```bash
-cd ../frontend
-npm install
-npm run dev
-```
-
-Open: `http://localhost:5173`
-
----
-
-## Environment Variables (`backend/.env`)
 
 | Variable               | Default                     | Description                  |
 | ---------------------- | --------------------------- | ---------------------------- |
