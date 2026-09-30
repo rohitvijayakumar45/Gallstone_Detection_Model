@@ -1,0 +1,45 @@
+:root {
+  --bg: #FBFBFA;
+  --surface: #FFFFFF;
+  --surface-2: #F3F3F0;
+  --border: #E4E4DE;
+  --divider: #EFEFEA;
+
+  --text: #1A1A1A;
+  --text-2: #5A5A55;
+  --text-3: #8A8A83;
+
+  --accent: #1F5C4C;
+  --accent-2: #7A5A2C;
+  --consensus: #0F3D33;
+
+  --ok: #2E6F40;
+  --warn: #B7791F;
+  --alarm: #A63232;
+  --info: #345A8A;
+
+  --focus: rgb(31 92 76 / 0.28);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
+
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.04), 0 1px 1px rgb(0 0 0 / 0.03);
+  --shadow-2: 0 2px 6px rgb(0 0 0 / 0.06), 0 1px 2px rgb(0 0 0 / 0.04);
+  --shadow-3: 0 8px 24px rgb(0 0 0 / 0.08), 0 2px 8px rgb(0 0 0 / 0.05);
+}

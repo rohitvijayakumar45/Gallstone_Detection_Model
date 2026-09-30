@@ -1,0 +1,8 @@
+brightness_p: 0.8
+gamma_p: 0.5
+horizontal_flip_p: 0.5
+rotation_limit: 10
+depth_attenuation_p: 0.4
+acoustic_shadow_p: 0.3
+speckle_p: 0.4
+reverberation_p: 0.2

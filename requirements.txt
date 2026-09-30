@@ -1,0 +1,63 @@
+# Core Deep Learning
+torch>=2.2.0
+torchvision>=0.17.0
+torchaudio>=2.2.0
+
+# Primary Detection Models
+rfdetr[train,loggers]>=0.3.0
+ultralytics>=8.4.0
+supervision>=0.23.0
+ensemble-boxes>=1.0.9
+
+# Preprocessing & Computer Vision
+opencv-python>=4.9.0
+albumentations>=1.4.0
+scikit-image>=0.22.0
+Pillow>=10.2.0
+SimpleITK>=2.3.0
+pydicom>=2.4.4
+
+# Explainability
+grad-cam>=1.5.0
+shap>=0.45.0
+lime>=0.2.0.1
+captum>=0.7.0
+torchcam>=0.4.0
+
+# Hyperparameter Optimization
+optuna>=3.6.0
+optuna-dashboard>=0.15.0
+ray[tune]>=2.10.0
+
+# Experiment Tracking
+mlflow>=2.12.0
+wandb>=0.16.0
+tensorboard>=2.16.0
+
+# Evaluation & Metrics
+pycocotools>=2.0.7
+torchmetrics>=1.3.0
+scikit-learn>=1.4.0
+scipy>=1.12.0
+
+# Frontend
+streamlit>=1.32.0
+gradio>=4.20.0
+plotly>=5.20.0
+streamlit-extras>=0.3.6
+
+# API
+fastapi>=0.110.0
+uvicorn>=0.28.0
+python-multipart>=0.0.9
+
+# Data Management
+pandas>=2.2.0
+numpy>=1.26.0
+h5py>=3.10.0
+
+# Reporting
+fpdf2>=2.7.9
+matplotlib>=3.8.0
+seaborn>=0.13.0
+reportlab>=4.2.0

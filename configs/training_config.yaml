@@ -1,0 +1,8 @@
+project_name: gallstone_detection
+target_map50: 0.97
+target_recall: 0.95
+target_fnr: 0.05
+folds: 5
+patient_level_split: true
+use_mlflow: true
+use_wandb: true

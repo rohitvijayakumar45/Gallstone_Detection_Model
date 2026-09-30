@@ -1,0 +1,10 @@
+model_size: base
+resolution: 640
+epochs: 150
+batch_size: 16
+lr: 0.0001
+lr_backbone: 0.00001
+weight_decay: 0.0001
+grad_accumulation_steps: 2
+clip_max_norm: 0.1
+patience: 20

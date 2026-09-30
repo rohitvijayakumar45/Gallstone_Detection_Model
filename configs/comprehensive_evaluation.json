@@ -1,0 +1,12 @@
+{
+  "baseline_map50": 0.0,
+  "results": {
+    "baseline": 0.0,
+    "shadow_verification": 0.0,
+    "multi_scale_tta": 0.0,
+    "full_optimization": 0.0
+  },
+  "final_map50": 0.0,
+  "improvement": 0.0,
+  "improvement_percent": NaN
+}

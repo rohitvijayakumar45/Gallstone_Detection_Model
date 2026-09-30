@@ -1,0 +1,41 @@
+# Medical data - never publish (patient images, licensed datasets)
+data/
+dataset_final/
+dataset_final_resplit/
+dataset_final_resplit_backup_*/
+dataset_new/
+*.dcm
+hard_negatives.txt
+
+# Model weights and training artefacts (large; publish via releases / LFS instead)
+*.pt
+*.pth
+*.ckpt
+*.onnx
+weights/
+production_models/
+runs/
+mlruns/
+graphify-out/
+scratch/
+*.db
+*.log
+
+# Environments and caches
+test_venv/
+venv/
+.venv/
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+.vite/
+.claude/settings.local.json
+
+# Stray outputs and local environment files
+.env
+.env.local
+*.whl
+ood_test.jpg
+sample_gb_*.jpg
